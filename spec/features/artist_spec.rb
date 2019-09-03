@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'navigate' do
+describe 'Artist navigate' do
   before do
     @artist = Artist.create(name: "My Artist", bio: "My artist bio")
   end
@@ -21,7 +21,7 @@ describe 'navigate' do
   end
 end
 
-describe 'form' do
+describe 'Artist form' do
   it 'shows a new form that submits content and redirects and prints out params' do
     visit new_artist_path
 
